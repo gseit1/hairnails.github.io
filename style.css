@@ -1,0 +1,59 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+h1{
+    font-family: "Arsenal SC", sans-serif;
+}
+.title{
+    background-color: plum;
+    height: 300px;
+}
+
+.title h1 {
+    padding: 25px;
+    font-size: 50px;
+}
+
+.titleParagraph{
+    margin-top: -30px;
+    padding: 0px 25px;
+}
+.products{
+    padding: 50px;
+}
+.card-img-top{
+    height: 400px;
+    
+    width: 0px;
+}
+.card-height{
+    height: 150px;
+}
+
+.store-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: plum;
+    height: 300px;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    text-align: center;
+    padding-top: 20px;
+}
+.about-us h2{
+    text-transform: uppercase;
+}

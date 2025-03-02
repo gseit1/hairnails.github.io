@@ -1,0 +1,55 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FFB4C2;
+}
+
+.store-select h2{
+    padding-bottom: 15px;
+}
+.displayBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:palevioletred;
+    padding: 50px 10px;
+    margin: 0px 100px;
+    border-radius: 3%;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+}
+
+.hair-img{
+    width: 300px;
+}
+.right-section p{
+    width: 300px;
+    text-align: center;
+    font-size: large;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    
+}
+@media screen and (max-width: 426px) {
+    .displayBox{
+        padding: 50px 30px;
+    }   
+    .list-group{
+        width: 250px;
+    }
+    }
+
+@media screen and (max-width: 769px) {
+.right-section{
+    display: none;
+}    
+.left-section{
+    display: none;
+}
+
+}
+

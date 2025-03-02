@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairNailsGreece</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+        
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div class="page">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:blueviolet;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Hair&Nails</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Αρχική</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Σχετικά με μας</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ραντεβού
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="hair.html">Μαλλιά </a></li>
+                      <li><a class="dropdown-item" href="pentikiour.html">Πεντικιούρ</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="manikiour.html">Μανικιούρ</a></li>
+                    </ul>
+                  </li>
+                
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Προφίλ
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signInModal">Σύνδεση</a></li>
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">Εγγραφή</a></li>
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">Το Προφίλ μου</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+          </nav>
+        <!-- Login Modal -->
+<!-- Login Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signInModalLabel">Σύνδεση</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="signInEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="signInEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signInPassword" class="form-label">Κωδικός</label>
+                        <input type="password" class="form-control" id="signInPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Σύνδεση</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+        <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signUpModalLabel">Εγγραφή</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="signUpForm">
+                            <div class="mb-3">
+                                <label for="signUpUserName" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="signUpUserName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signUpEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="signUpEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="signUpPassword" class="form-label">Κωδικός</label>
+                                <input type="password" class="form-control" id="signUpPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Εγγραφή</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      <!-- Profile Modal -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="profileModalLabel">Το Προφίλ μου</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="profileUsername" class="form-label">Όνομα χρήστη:</label>
+                    <p id="profileUsername"></p>
+                </div>
+                <div class="mb-3">
+                    <label for="profileEmail" class="form-label">Email:</label>
+                    <p id="profileEmail"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <div class="title">      
+            <h1>Hair&Nails for you</h1>
+            <p class="titleParagraph">Το ιδανικό μέρος για την γυναικεία περιποίηση</p>
+        </div>
+        <div class="products">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/hair.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Μαλλιά</h5>
+                      <p class="card-text">Ψάχνεις το ιδανικό κομμωτήριο για την τρίχα σου; Κλείσε το Ραντεβού σου σε ένα απο τα πιό αξιόπιστα κομμωτήρια της επιλογής σου!</p>
+                    </div>
+                    <a href="hair.html">
+                        <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 15px; ">
+                            Κλείσε Ραντεβού
+                        </button>
+                    </a>
+                    
+                  </div>
+                  
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/manikiour.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Μανικιούρ</h5>
+                      <p class="card-text">Ρίξε μία ματία στην πληθώρα επιλογών που σου προσφέρουμε για την περιποίηση των νυχιών σου!</p>
+                    </div>
+                    <a href="manikiour.html">
+                        <button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 15px;">
+                        Κλείσε Ραντεβού
+                    </button>
+                    </a>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/pedikiour.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Πεντικιούρ</h5>
+                      <p class="card-text">Ρίξε μία ματία στην πληθώρα επιλογών που σου προσφέρουμε για την περιποίηση των νυχιών σου!</p>
+                    </div>
+                    <a href="pentikiour.html"><button type="button" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 15px;">
+              Κλείσε Ραντεβού
+            </button></a>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="about-us">
+            <h2>Γνώρισε την ομάδα μας </h2>
+            <i class="fa-solid fa-handshake"></i>
+            <p>προσφέρουμε πλήρη αξιοπιστία στον πελάτη καθώς έχουμε υπάρξει προτίστως, <br> οπότε υπάρχει πλήρης κατανόηση! <br>
+            Η ομάδα μας αποτελείται από 3 φοιτητές του Αριστοτέλειου <br> Πανεπιστημίου Θεσσαλονίκης του τμήματος Πληροφορικής!
+            </p>
+        </div>
+        <div class="footer">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Copyrights taken</li>
+                
+                <li class="list-group-item">paok</li>
+                <li class="list-group-item">ole</li>
+                <li class="list-group-item">seit</li>
+                <li class="list-group-item">giorgoss</li>
+              </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d2a29fd6bb.js" crossorigin="anonymous"></script>
+</body>
+</html>

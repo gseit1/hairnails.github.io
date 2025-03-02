@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ραντεβού Μαλλιών</title>
+    <link rel="stylesheet" href="hair.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<div class="page">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:blueviolet;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Hair&Nails</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Αρχική</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Σχετικά με μας</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Ραντεβού
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Μαλλιά</a></li>
+                                <li><a class="dropdown-item" href="pentikiour.html">Πεντικιούρ</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Μανικιούρ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+<div class="middle">
+    <div class="left-section">
+        <img class="hair-img" src="images/hair1.jpg" alt="">
+    </div>   
+    <div class="displayBox">
+        <div class="store-select">
+            <h2>1. Διάλεξε κομμωτήριο</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true" onclick="showReservation()">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">HAIR Luxury</h5>
+                    </div>
+                    <p class="mb-1">Αγιου Δημητριου 120, θεσσαλονικη</p>
+                    <small>Κλεισε Ραντεβού</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" onclick="showReservation()">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Woman's care</h5>
+                    </div>
+                    <p class="mb-1">Παυλου Μελα 42,θεσσαλονικη</p>
+                    <small class="text-body-secondary">Κλείσε Ραντεβού</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" onclick="showReservation()">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Eleni's Place</h5>
+                    </div>
+                    <p class="mb-1">Μοναστηρίου 59,θεσσαλονικη</p>
+                    <small class="text-body-secondary">Κλείσε Ραντεβού</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true" onclick="showReservation()">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">HAIR Luxury</h5>
+                    </div>
+                    <p class="mb-1">Αγιου Δημητριου 120, θεσσαλονικη</p>
+                    <small>Κλεισε Ραντεβού</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" onclick="showReservation()">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Woman's care</h5>
+                    </div>
+                    <p class="mb-1">Παυλου Μελα 42,θεσσαλονικη</p>
+                    <small class="text-body-secondary">Κλείσε Ραντεβού</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action" onclick="showReservation()">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Eleni's Place</h5>
+                    </div>
+                    <p class="mb-1">Μοναστηρίου 59,θεσσαλονικη</p>
+                    <small class="text-body-secondary">Κλείσε Ραντεβού</small>
+                </a>
+            </div>
+        </div>
+
+        <div class="reservation-select" style="display:none;">
+            <h2>2. Επιλέξτε Ημέρα </h2>
+            <input type="date" id="date" required>
+            <!-- Calendar or time selection inputs go here -->
+            <div id="calendar">
+                <!-- You can use a calendar library here for better functionality -->
+                <label for="appt">Επίλεξε Ώρα</label>
+
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+                
+                <small>Ώρες λειτουργίας 9:00-17:00</small>
+                <p>Calendar Placeholder</p>
+            </div>
+            <button class="btn btn-primary" onclick="showStoreSelect()">Πίσω</button>
+            <button class="btn btn-primary" onclick="showUserInfo()" >Συνέχεια</button>
+        </div>
+        <div class="userInfo" style="display: none;">
+            <h2>Συμπλήρωσε τα στοιχεία σου</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Όνομα</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="surname" class="form-label">Επώνυμο</label>
+                    <input type="text" class="form-control" id="surname" name="surname" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telephone" class="form-label">Τηλέφωνο</label>
+                    <input type="number" class="form-control" id="telephone" name="telephone" required>
+                </div>
+                
+               
+                <button type="submit" class="btn btn-primary" onclick="bookReservetion()">Κλείσε το Ραντεβού</button>
+              </form>
+        </div>
+    </div>
+    <div class="right-section">
+        <img class="hair-img" src="images/hair.jpg" alt="">
+        <p>Κλείσε το ραντεβού σου με 3 απλά βήματα:<br>
+            1.Δίαλεξε το κατάστημα που σου ταιριάζει<br>
+            2.Επέλεξε την ημέρα και ώρα που σε βολέυει<br>
+            3.Συμπλήρωσε τα στοιχεία επικοινωνίας σου<br>
+            Είσαι έτοιμη!
+
+        </p>
+    </div>
+</div>    
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function showReservation() {
+            document.querySelector('.store-select').style.display = 'none';
+            document.querySelector('.reservation-select').style.display = 'block';
+        }
+
+        function showStoreSelect() {
+            document.querySelector('.store-select').style.display = 'block';
+            document.querySelector('.reservation-select').style.display = 'none';
+        }
+        function showUserInfo(){
+            document.querySelector('.reservation-select').style.display='none';
+            document.querySelector('.userInfo').style.display = 'block';
+        }
+        function bookReservetion(){
+            alert("Επιτυχης Κράτηση");
+            window.location.href = 'index.html';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+    // Set today's date as the minimum date for the date input
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').setAttribute('min', today);
+
+    // Add event listener to time input
+    const timeInput = document.getElementById('appt');
+    timeInput.addEventListener('input', function() {
+        const selectedDate = new Date(document.getElementById('date').value);
+        const currentDate = new Date();
+        
+        // If the selected date is today, enforce time constraints
+        if (selectedDate.toDateString() === currentDate.toDateString()) {
+            const [hours, minutes] = timeInput.value.split(':');
+            if (parseInt(hours) < currentDate.getHours()) {
+                timeInput.value = '';
+                alert('Please select a time that is later than the current time.');
+            } else if (parseInt(hours) === currentDate.getHours() && parseInt(minutes) < currentDate.getMinutes()) {
+                timeInput.value = '';
+                alert('Please select a time that is later than the current time.');
+            }
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
